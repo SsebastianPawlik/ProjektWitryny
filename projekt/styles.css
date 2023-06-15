@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#map-container {
+    position: absolute;
+    left: 220px; 
+    top: 0;
+    width: calc(100% - 220px); 
+    height: 100%;
+    overflow: scroll;  
+    margin-left: 15px;
+    background-color: #e6e6e6;
+}
+
+#map-content {
+    white-space: nowrap;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #008CBA; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.tile {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey;
+}
+
+.row {
+    white-space: nowrap;
+}
+
+.tile.tree {
+    background-image: url('img/drzewo.jpg');
+}
+
+.tile.water {
+    background-image: url('img/woda.jpg');
+}
+
+.tile.river {
+    background-image: url('img/rzeka.jpg');
+}
+
+.tile.road {
+    background-image: url('img/droga.jpg');
+}
+
+.tile-button {
+    width: 20px; 
+    height: 20px;
+    margin: 5px;
+    border: 1px solid #ccc; 
+    cursor: pointer; 
+  }
+  
+  .tile-button.tree {
+    background-image: url('img/drzewo.jpg');
+  }
+
+  .tile-button.water {
+    background-image: url('img/woda.jpg');
+  }
+
+  .tile-button.river {
+    background-image: url('img/rzeka.jpg');
+  }
+
+  .tile-button.road {
+    background-image: url('img/droga.jpg');
+  }
+
+  
+  /* i tak dalej dla każdego typu płytki */
+  
+  #tool-panel {
+    width: 200px;  
+    height: 20%;  
+    background: #eee;  
+    padding: 10px;  
+    box-sizing: border-box;  
+    overflow: auto;  
+  }
+
+.selected {
+    border: 2px solid green;  
+}

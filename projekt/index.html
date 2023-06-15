@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map Generator Tool</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    
+<body>
+    <div id="sidebar">
+        <div id="map-form">
+            <label for="map-width">Map Width:</label>
+            <input type="number" id="map-width">
+            <label for="map-height">Map Height:</label>
+            <input type="number" id="map-height">
+            <button id="generate-button">Generate Map</button>
+        </div>
+            <label for="texture-select">Texture:</label>
+                <div id="texture-buttons">
+                    <img src="img/drzewo.jpg" data-value="tree">
+                    <img src="img/woda.jpg" data-value="water">
+                    <img src="img/rzeka.jpg" data-value="river">
+                    <img src="img/droga.jpg" data-value="road">
+                </div>
+                
+        <label for="scrolling-method">Scrolling Method:</label>
+        <select id="scrolling-method">
+            <option value="drag">Drag</option>
+            <option value="edge">Edge</option>
+        </select>
+        <button id="zoom-in-button"><i class="fas fa-search-plus"></i> Zoom In</button>
+        <button id="zoom-out-button"><i class="fas fa-search-minus"></i> Zoom Out</button>
+        <button id="reset-button"><i class="fas fa-sync"></i> Reset Zoom</button>
+        <button id="export-button"><i class="fas fa-download"></i> Export Map</button>
+        <input type="file" id="import-input" style="display: none;">
+        <button id="import-button"><i class="fas fa-upload"></i> Import Map</button>
+
+    </div>
+    <div id="map-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
